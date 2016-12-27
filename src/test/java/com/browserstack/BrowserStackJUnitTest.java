@@ -74,13 +74,13 @@ public class BrowserStackJUnitTest {
             }
         }
 
-        String username = System.getenv("BROWSERSTACK_USERNAME");
+        String username = System.getenv("BROWSERSTACK_USER");
         System.out.println("Username: " + username);
         if(username == null) {
             username = (String) config.get("user");
         }
 
-        String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+        String accessKey = System.getenv("BROWSERSTACK_ACCESSKEY");
         System.out.println("Accesskey: " + accessKey);
         if(accessKey == null) {
             accessKey = (String) config.get("key");
