@@ -10,11 +10,18 @@ public class SingleTest extends BrowserStackJUnitTest {
 
   @Test
   public void test() throws Exception {
-    driver.get("https://www.massmutual.com/myaccount/rl/Login/login?type=Customer");
+    /*driver.get("https://www.massmutual.com/myaccount/rl/Login/login?type=Customer");
     WebElement element = driver.findElement(By.name("user-name"));
     element.sendKeys("abcdbrowserstack");
     driver.findElement(By.xpath("//div[@id='continue-button']/input")).click();
     //element.submit();
+    Thread.sleep(5000);
+    */
+        driver.get("https://www.massmutual.com/myaccount/rl/Login/login?type=Customer");
+        driver.findElement(By.id("user-name")).click();
+        driver.findElement(By.id("user-name")).clear();
+        driver.findElement(By.id("user-name")).sendKeys("abcd");
+        driver.findElement(By.xpath("//div[@id='continue-button']/input")).click();
     Thread.sleep(5000);
 
     //assertEquals("BrowserStack - Google Search", driver.getTitle());
