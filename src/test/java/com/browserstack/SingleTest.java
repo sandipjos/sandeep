@@ -10,9 +10,9 @@ public class SingleTest extends BrowserStackJUnitTest {
 
   @Test
   public void test() throws Exception {
-    driver.get("https://www.google.com/ncr");
+    driver.get("https://www.massmutual.com/myaccount/rl/Login/login?type=Customer");
     WebElement element = driver.findElement(By.name("q"));
-    element.sendKeys("BrowserStack");
+    element.sendKeys("abcdbrowserstack");
     element.submit();
     Thread.sleep(5000);
 
