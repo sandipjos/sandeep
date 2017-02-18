@@ -11,9 +11,9 @@ public class SingleTest extends BrowserStackJUnitTest {
   @Test
   public void test() throws Exception {
     driver.get("https://www.google.com/");
-    driver.findElement(By.xpath("//div/div[3]/form/div[2]/div[2]/div[1]/div[1]/div[3]/div/div/div[3]/div/input[1]")).click();
-    driver.findElement(By.xpath("//div/div[3]/form/div[2]/div[2]/div[1]/div[1]/div[3]/div/div/div[3]/div/input[1]")).clear();
-    driver.findElement(By.xpath("//div/div[3]/form/div[2]/div[2]/div[1]/div[1]/div[3]/div/div/div[3]/div/input[1]")).sendKeys("massmutual");
+    driver.findElement(By.cssSelector("#lst-ib")).click();
+    driver.findElement(By.cssSelector("#lst-ib")).clear();
+    driver.findElement(By.cssSelector("#lst-ib")).sendKeys("massmutual");
     //driver.findElement(By.xpath("//div/div[3]/form/div[2]/div[2]/div[1]/div[1]/div[3]/div/div/div[3]/div/input[1]")).click();
     //driver.findElement(By.xpath("//div/div[3]/form/div[2]/div[2]/div[1]/div[1]/div[3]/div/div/div[3]/div/input[1]")).sendKeys("\n");
     Thread.sleep(5000);
